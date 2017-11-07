@@ -1,4 +1,4 @@
-# fcuibaba-TMS
+# fcbb-dc
 
 配送系统
 
@@ -13,6 +13,14 @@
 ```bash
 $ npm i
 $ npm run dev
+$ open http://localhost:7001/
+```
+
+### 本地调试模式
+
+```bash
+$ npm i
+$ npm run debug
 $ open http://localhost:7001/
 ```
 
