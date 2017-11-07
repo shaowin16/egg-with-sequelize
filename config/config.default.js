@@ -85,7 +85,7 @@ module.exports = appInfo => {
     filesRotateBySize: [
       path.join(appInfo.root, 'logs', appInfo.name, 'fcbb-dc-web.log'),
     ],
-    maxFileSize: 3 * 1024 * 1024,
+    maxFileSize: 5 * 1024,
   };
 
   return config;
