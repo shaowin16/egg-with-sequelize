@@ -27,7 +27,7 @@ $ open http://localhost:7001/
 ### Docker部署
 
 ```bash
-$ ./start-code.sh
+$ ./startup-code.sh
 ```
 
 ### 单元测试
