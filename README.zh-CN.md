@@ -1,6 +1,6 @@
-# fcbb-dc
+# egg-with-sequelize
 
-配送系统
+sequelizejs与egg框架的整合，内置提供了简单实用的demo，快速开发业务，docker化部署。
 
 ## 快速入门
 
@@ -24,11 +24,10 @@ $ npm run debug
 $ open http://localhost:7001/
 ```
 
-### 部署
+### Docker部署
 
 ```bash
-$ npm start
-$ npm stop
+$ ./start-code.sh
 ```
 
 ### 单元测试
