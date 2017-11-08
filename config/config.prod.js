@@ -22,27 +22,6 @@ module.exports = () => {
       logging: false,
     },
 
-    nats: {
-      subject: 'indexy.articles',
-      clusterId: 'test-cluster',
-      clientId: (() => {
-        return 'node-stream-pub_' + Date.now(); // ( process.env.nats_cid || '' )
-      })(),
-      opts: {
-        url: 'nats://114.67.159.3:4222',
-        maxReconnectAttempts: -1, // 一直重试
-        reconnectTimeWait: 1000, // 1s
-      },
-      // 订阅时可配置的参数
-      subscriptionOptions: {
-        durableName: 'crawler-workers',
-        deliverAllAvailable: true,
-        maxInFlight: 5, // 一次只接收处理5个消息
-        // ackWait: 60 * 1000,
-        manualAckMode: true, // 手动ack
-      },
-    },
-
     logger: {
       level: 'INFO',
       consoleLevel: 'INFO',
