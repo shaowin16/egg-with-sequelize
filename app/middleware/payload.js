@@ -4,18 +4,18 @@
 
 module.exports = () => {
 
-  return function* payload(next) {
+  return async function payload(ctx, next) {
 
     // ######## request phase ########
 
-    yield next;
+    await next();
 
     // ######## response phase ########
 
     // 正确情况统一消息体 payload
-    this.body = {
+    ctx.body = {
       success: true,
-      payload: this.body || '',
+      payload: ctx.body || '',
     };
 
   };

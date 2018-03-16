@@ -1,10 +1,10 @@
 {
-  "name": "fcbb-dc",
+  "name": "egg-with-mysql",
   "version": "1.0.0",
-  "description": "配送系统",
+  "description": "egg-with-mysql",
   "private": true,
   "dependencies": {
-    "egg": "^1.9.0",
+    "egg": "^2.0.0",
     "egg-scripts": "^2.1.0",
     "egg-sequelize": "3.1.0",
     "egg-validate": "1.0.0",
@@ -24,7 +24,7 @@
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "start": "npm install --registry=https://registry.npm.taobao.org --production && egg-scripts start --port=5002 --env=prod --title=indexy-crawler-api --workers=4",
@@ -46,6 +46,6 @@
     "type": "git",
     "url": ""
   },
-  "author": "vector",
+  "author": "shaowin",
   "license": "MIT"
 }
