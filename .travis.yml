@@ -8,7 +8,7 @@ env:
 install:
   - npm i npminstall && npminstall
 script:
-  - npm run ci
+  - npm run start
 after_script:
   - npminstall codecov && codecov
 deploy:
