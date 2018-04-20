@@ -9,3 +9,9 @@ script:
   - npm run ci
 after_script:
   - npminstall codecov && codecov
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
